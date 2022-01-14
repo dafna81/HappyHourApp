@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">CocktailsApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="cocktails">Cocktails</string>
+    <string name="user_menu">User Menu</string>
+    <string name="daily_drink">Daily Drink</string>
+    <string name="cocktail_name">Cocktail name</string>
+    <string name="happy_hour">Happy Hour</string>
+    <string name="surprise_me">Surprise me!</string>
+    <string name="let_s_choose_your_drink">Let\'s choose your drink!</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="instructions">Instructions:</string>
+    <string name="image_description">image description</string>
+    <string name="search_a_drink">Search a drink</string>
+    <string name="choose_a_drink">Choose a drink!</string>
+    <string name="find">Find</string>
+    <string name="show_the_recipe">Show the recipe</string>
+    <string name="what_would_you_like_to_sip_today">What would you like to sip today?</string>
+    <string name="what_are_you_having_today">What are you having today?</string>
+    <string name="by_drink_name">Search by drink name</string>
+    <string name="by_ingredient">Search by ingredient</string>
+    <string name="upload_image">Upload image</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="name_of_your_drink">Name of your drink:</string>
+    <string name="add_your_recipe">Add your recipe</string>
+    <string name="search">Search</string>
+    <string name="my_favorites">My favorites</string>
+    <string name="add_a_recipe">Add a recipe</string>
+    <string name="my_recipes">My recipes</string>
+    <string name="measures">Measures:</string>
+    <string name="like">like</string>
+    <string name="delete_recipe">Delete recipe</string>
+    <string name="edit_recipe">Edit recipe</string>
+    <string name="update_your_recipe">Update your recipe</string>
+    <string name="go">Go!</string>
+    <string name="what_do_you_have_at_home">What do you have at home?</string>
+    <string name="my_drinks">My drinks</string>
+    <string name="let_s_find_your_drink">Let\'s find your drink</string>
+
+</resources>

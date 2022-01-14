@@ -1,0 +1,67 @@
+<resources>
+
+    <style name="Widget.Theme.CocktailsApp.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="buttonStyle" parent="">
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:shadowColor">#878787</item>
+        <item name="android:shadowRadius">8</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/simple_text</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="titleStyle" parent="">
+        <item name="fontFamily">@font/ubuntu_bold</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:shadowColor">#878787</item>
+        <item name="android:shadowRadius">20</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="simpleTextStyle" parent="">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/simple_text</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="simpleTextTitleStyle" parent="">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/simple_text</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <!-- Defined a new style with three items of color. -->
+    <style name="DemoTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/first_header</item>
+        <!-- ColorPrimaryDark - this will be the color of the status bar -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/fields_hint</item>
+    </style>
+
+</resources>

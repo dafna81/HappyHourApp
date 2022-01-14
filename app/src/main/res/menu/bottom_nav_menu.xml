@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/search_icon"
+        android:title="@string/search"
+        app:iconTint="@color/button_text" />
+
+    <item
+        android:id="@+id/userMenuFragment"
+        android:icon="@drawable/mydrinks_icon"
+        android:title="@string/my_drinks"
+        app:iconTint="@color/button_text" />
+
+    <item
+        android:id="@+id/surpriseMeFragment"
+        android:icon="@drawable/surpriseme_icon"
+        android:title="@string/surprise_me"
+        app:iconTint="@color/button_text" />
+
+</menu>

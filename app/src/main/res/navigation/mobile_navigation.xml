@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/searchFragment">
+    <activity
+        android:id="@+id/splashScreenActivity"
+        android:name="ohad.dafna.happyhourapp.SplashScreenActivity"
+        android:label="splash_screen_activity"
+        tools:layout="@layout/activity_splash_screen" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="ohad.dafna.happyhourapp.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_searchResultsFragment"
+            app:destination="@id/searchResultsFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="ohad.dafna.happyhourapp.ui.search.SearchResultsFragment"
+        android:label="fragment_search_results"
+        tools:layout="@layout/fragment_search_results" >
+        <action
+            android:id="@+id/action_searchResultsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="ohad.dafna.happyhourapp.ui.search.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/userMenuFragment"
+        android:name="ohad.dafna.happyhourapp.ui.usermenu.UserMenuFragment"
+        android:label="fragment_user_menu"
+        tools:layout="@layout/fragment_user_menu" >
+        <action
+            android:id="@+id/action_userMenuFragment_to_addCocktailFragment"
+            app:destination="@id/addCocktailFragment" />
+        <action
+            android:id="@+id/action_userMenuFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_userMenuFragment_to_myRecipesFragment2"
+            app:destination="@id/myRecipesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCocktailFragment"
+        android:name="ohad.dafna.happyhourapp.ui.usermenu.AddCocktailFragment"
+        android:label="fragment_add_cocktail"
+        tools:layout="@layout/fragment_add_cocktail" >
+        <action
+            android:id="@+id/action_addCocktailFragment_to_myRecipesFragment"
+            app:destination="@id/myRecipesFragment" />
+        <action
+            android:id="@+id/action_addCocktailFragment_to_userMenuFragment"
+            app:destination="@id/userMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRecipesFragment"
+        android:name="ohad.dafna.happyhourapp.ui.usermenu.MyRecipesFragment"
+        android:label="fragment_my_recipes"
+        tools:layout="@layout/fragment_my_recipes" >
+        <action
+            android:id="@+id/action_myRecipesFragment_to_myRecipesDetailsFragment"
+            app:destination="@id/myRecipesDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRecipesDetailsFragment"
+        android:name="ohad.dafna.happyhourapp.ui.usermenu.MyRecipesDetailsFragment"
+        android:label="fragment_my_recipes_details"
+        tools:layout="@layout/fragment_my_recipes_details" >
+        <action
+            android:id="@+id/action_myRecipesDetailsFragment_to_myRecipesFragment"
+            app:destination="@id/myRecipesFragment" />
+        <action
+            android:id="@+id/action_myRecipesDetailsFragment_to_updateMyRecipeFragment"
+            app:destination="@id/updateMyRecipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="ohad.dafna.happyhourapp.ui.usermenu.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/surpriseMeFragment"
+        android:name="ohad.dafna.happyhourapp.ui.surpriseme.SurpriseMeFragment"
+        android:label="fragment_surprise_me"
+        tools:layout="@layout/fragment_surprise_me" />
+    <fragment
+        android:id="@+id/updateMyRecipeFragment"
+        android:name="ohad.dafna.happyhourapp.ui.usermenu.UpdateMyRecipeFragment"
+        android:label="fragment_update_my_recipe"
+        tools:layout="@layout/fragment_update_my_recipe" >
+        <action
+            android:id="@+id/action_updateMyRecipeFragment_to_myRecipesDetailsFragment"
+            app:destination="@id/myRecipesDetailsFragment" />
+    </fragment>
+</navigation>

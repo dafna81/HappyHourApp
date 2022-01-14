@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.usermenu.AddCocktailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textview_add_cocktails_title"
+                style="@style/titleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center|top"
+                android:minHeight="48dp"
+                android:text="@string/add_your_recipe" />
+
+            <EditText
+                android:id="@+id/edittext_cocktail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/fields_background"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:hint="@string/name_of_your_drink"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/fields_text"
+                android:textColorHint="@color/fields_hint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/multiline_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/fields_background"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:hint="@string/ingredients"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:textColor="@color/fields_text"
+                android:textColorHint="@color/fields_hint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/multiline_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/fields_background"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:hint="@string/instructions"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:textColor="@color/fields_text"
+                android:textColorHint="@color/fields_hint"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_upload_image"
+                style="@style/buttonStyle"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:text="@string/upload_image" />
+
+            <TextView
+                android:id="@+id/textview_image_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/simple_text"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageview_done"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/done"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_cancel"
+                    style="@style/buttonStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/cancel" />
+
+                <Button
+                    android:id="@+id/button_save"
+                    style="@style/buttonStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/save"
+
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
