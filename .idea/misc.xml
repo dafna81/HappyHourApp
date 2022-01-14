@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/font/bangers.xml" value="0.3125" />
         <entry key="app/src/main/res/font/days_one.xml" value="0.3125" />
         <entry key="app/src/main/res/font/fontdiner_swanky.xml" value="0.3125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/favorites_item.xml" value="0.41354166666666664" />
         <entry key="app/src/main/res/layout/fragment_add_cocktail.xml" value="0.19814814814814816" />

@@ -96,7 +96,7 @@
         android:id="@+id/surpriseMeFragment"
         android:name="ohad.dafna.happyhourapp.ui.surpriseme.SurpriseMeFragment"
         android:label="fragment_surprise_me"
-        tools:layout="@layout/fragment_surprise_me" />
+        tools:layout="@layout/fragment_details" />
     <fragment
         android:id="@+id/updateMyRecipeFragment"
         android:name="ohad.dafna.happyhourapp.ui.usermenu.UpdateMyRecipeFragment"

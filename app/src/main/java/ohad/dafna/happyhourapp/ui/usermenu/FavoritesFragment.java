@@ -23,7 +23,6 @@ import ohad.dafna.happyhourapp.databinding.FragmentFavoritesBinding;
 import ohad.dafna.happyhourapp.utils.MyItemDecoration;
 
 public class FavoritesFragment extends Fragment {
-
     private FavoritesViewModel mViewModel;
     private FragmentFavoritesBinding binding;
 

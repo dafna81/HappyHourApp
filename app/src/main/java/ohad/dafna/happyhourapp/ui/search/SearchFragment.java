@@ -26,7 +26,6 @@ import ohad.dafna.happyhourapp.databinding.FragmentSearchBinding;
 import ohad.dafna.happyhourapp.models.Ingredient;
 
 public class SearchFragment extends Fragment {
-
     private SearchViewModel mViewModel;
     private FragmentSearchBinding binding;
 
@@ -90,8 +89,8 @@ public class SearchFragment extends Fragment {
                 if (binding.autocompleteDrinkNames.getText() != null) {
                     for (CocktailDatabase cocktail : cocktails) {
                         String drinkName = cocktail.getStrDrink();
-                        if (binding.autocompleteDrinkNames.getText().toString().toLowerCase()
-                                .equals(drinkName.toLowerCase())) {
+                        if (binding.autocompleteDrinkNames.getText().toString()
+                                .equalsIgnoreCase(drinkName)) {
                             byNameArgs.putParcelable("cocktail", cocktail);
                             NavHostFragment.findNavController(SearchFragment.this)
                                     .navigate(R.id.action_searchFragment_to_detailsFragment, byNameArgs);

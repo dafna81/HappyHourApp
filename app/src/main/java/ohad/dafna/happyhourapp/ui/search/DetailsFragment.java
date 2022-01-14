@@ -22,7 +22,6 @@ import ohad.dafna.happyhourapp.database.CocktailDatabase;
 import ohad.dafna.happyhourapp.databinding.FragmentDetailsBinding;
 
 public class DetailsFragment extends Fragment {
-
     private DetailsViewModel mViewModel;
     private FragmentDetailsBinding binding;
 
